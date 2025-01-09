@@ -1,0 +1,564 @@
+<trips>
+    <!-- Define vehicle types with specific lengths and characteristics -->
+    <vType id="train_stopping" vClass="rail" length="150" maxSpeed="35.00" color="1,0,0"/>
+    <vType id="train_non_stopping" vClass="rail" length="150" maxSpeed="35.00" color="0,0,1"/>
+    
+    <!-- Define routes -->
+    <route id="route_stop_all" edges="E18 E20 E21 E22 E23 E24 E26 E27 E28 E29 E30 E31 E32 E34 E35 E36 E37"/>
+    <route id="route_skip_stations" edges="E18 E19 E23 E24 E25 E29 E30 E31 E32 E33 E37"/>
+    
+    <!-- Generate 24 trips with 20-minute headway for 8 hours -->
+    <!-- Stopping train trips and non-stopping train trips -->
+
+    <!-- Trip 1 -->
+    <trip id="trip_stop_1" type="train_stopping" depart="0" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_1" type="train_non_stopping" depart="600" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 2 -->
+    <trip id="trip_stop_2" type="train_stopping" depart="1200" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_2" type="train_non_stopping" depart="1800" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 3 -->
+    <trip id="trip_stop_3" type="train_stopping" depart="2400" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_3" type="train_non_stopping" depart="3000" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 4 -->
+    <trip id="trip_stop_4" type="train_stopping" depart="3600" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_4" type="train_non_stopping" depart="4200" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 5 -->
+    <trip id="trip_stop_5" type="train_stopping" depart="4800" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_5" type="train_non_stopping" depart="5400" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 6 -->
+    <trip id="trip_stop_6" type="train_stopping" depart="6000" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_6" type="train_non_stopping" depart="6600" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 7 -->
+    <trip id="trip_stop_7" type="train_stopping" depart="7200" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_7" type="train_non_stopping" depart="7800" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 8 -->
+    <trip id="trip_stop_8" type="train_stopping" depart="8400" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_8" type="train_non_stopping" depart="9000" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 9 -->
+    <trip id="trip_stop_9" type="train_stopping" depart="9600" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_9" type="train_non_stopping" depart="10200" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 10 -->
+    <trip id="trip_stop_10" type="train_stopping" depart="10800" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_10" type="train_non_stopping" depart="11400" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 11 -->
+    <trip id="trip_stop_11" type="train_stopping" depart="12000" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_11" type="train_non_stopping" depart="12600" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 12 -->
+    <trip id="trip_stop_12" type="train_stopping" depart="13200" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_12" type="train_non_stopping" depart="13800" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 13 -->
+    <trip id="trip_stop_13" type="train_stopping" depart="14400" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_13" type="train_non_stopping" depart="15000" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 14 -->
+    <trip id="trip_stop_14" type="train_stopping" depart="15600" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_14" type="train_non_stopping" depart="16200" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 15 -->
+    <trip id="trip_stop_15" type="train_stopping" depart="16800" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_15" type="train_non_stopping" depart="17400" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 16 -->
+    <trip id="trip_stop_16" type="train_stopping" depart="18000" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_16" type="train_non_stopping" depart="18600" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 17 -->
+    <trip id="trip_stop_17" type="train_stopping" depart="19200" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_17" type="train_non_stopping" depart="19800" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 18 -->
+    <trip id="trip_stop_18" type="train_stopping" depart="20400" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_18" type="train_non_stopping" depart="21000" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 19 -->
+    <trip id="trip_stop_19" type="train_stopping" depart="21600" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_19" type="train_non_stopping" depart="22200" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 20 -->
+    <trip id="trip_stop_20" type="train_stopping" depart="22800" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_20" type="train_non_stopping" depart="23400" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 21 -->
+    <trip id="trip_stop_21" type="train_stopping" depart="24000" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_21" type="train_non_stopping" depart="24600" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 22 -->
+    <trip id="trip_stop_22" type="train_stopping" depart="25200" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_22" type="train_non_stopping" depart="25800" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 23 -->
+    <trip id="trip_stop_23" type="train_stopping" depart="26400" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_23" type="train_non_stopping" depart="27000" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+
+    <!-- Trip 24 -->
+    <trip id="trip_stop_24" type="train_stopping" depart="27600" route="route_stop_all">
+        <stop busStop="bs_0" duration="30"/>
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_3" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_8" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+    <trip id="trip_skip_24" type="train_non_stopping" depart="28200" route="route_skip_stations">
+		<stop busStop="bs_1" duration="30"/>
+		<stop busStop="bs_2" duration="30"/>
+		<stop busStop="bs_4" duration="30"/>
+		<stop busStop="bs_5" duration="30"/>
+		<stop busStop="bs_6" duration="30"/>
+		<stop busStop="bs_7" duration="30"/>
+		<stop busStop="bs_9" duration="30"/>
+    </trip>
+</trips>
