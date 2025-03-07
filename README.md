@@ -10,6 +10,8 @@ The workflow involves creating and configuring several files, including `.net`, 
 
 ## 🏗️ 1. Creating the Network File (`.net.xml`)
 
+Note: Edge and Node data was obtained from ([Open Street Map](https://www.openstreetmap.org/#map=6/51.33/10.45)) data.
+
 ### 🎨 **Using NETEDIT to Create Nodes and Edges**  
 The railway network can be created using **NETEDIT**, a graphical editor for SUMO networks. NETEDIT allows users to:  
 - 🔹 Add **nodes** representing junctions or stations.  
